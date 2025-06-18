@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<h2>Hello, {{ user.username }}!</h2>
+
+<h3>Events You've Registered For:</h3>
+{% if registered_events %}
+    <ul>
+        {% for event in registered_events %}
+            <li>
+                <strong>{{ event.title }}</strong><br>
+                Date: {{ event.date.strftime('%Y-%m-%d %H:%M') }}<br>
+                Venue: {{ event.venue }}<br>
+                <em>{{ event.description }}</em><br>
+            </li>
+            <hr>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>You haven't registered for any events yet.</p>
+{% endif %}
+
+{% endblock %}
