@@ -40,12 +40,13 @@ A role-based event management web app built using Flask. It allows users to regi
 - `EventRegistration` tracks which users are registered for which events.
 - Relationships between models are set up properly to avoid circular imports.
 
-## 🧠 Learning-Oriented Build
+### 🧠 Built for Deep Learning
 
-This project was developed as a learning project with the following principles:
-- **Code snippets over copy-paste** to encourage debugging and understanding.
-- **Minimal scaffolding** to understand how routes, forms, models, and templates connect.
-- **Step-by-step supervision** to catch and fix bugs quickly while learning.
+This project was developed with the goal of learning full-stack web development using Flask. The focus was on:
+
+- **Hands-on implementation** of core Flask features like routing, user authentication, and database relationships.
+- **Gradual progression**, where each feature was built step-by-step with full understanding of how routes, forms, models, and templates work together.
+- **Focus on architecture**, such as using Blueprints, separating concerns, and applying role-based logic cleanly and efficiently.
 
 ## 🔧 Future Features (Planned)
 - Admin dashboard for deleting/editing all events.
